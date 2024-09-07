@@ -57,7 +57,7 @@ pipeline {
         failure {
             script {
                 emailext(
-                    to: 'omarseyam1729@gmail.com',
+                    to: 'siddharthy7478@gmail.com',
                     subject: "Jenkins Build Failed: ${env.BUILD_ID}",
                     body: """<p>Build ${env.BUILD_ID} failed. Check Jenkins for details.</p>
                              <p>Console output: <a href="${env.BUILD_URL}console">${env.BUILD_URL}console</a></p>""",
@@ -68,7 +68,7 @@ pipeline {
         success {
             script {
                 emailext(
-                    to: 'omarseyam1729@gmail.com',
+                    to: 'siddharthy7478@gmail.com',
                     subject: "Jenkins Build Success: ${env.BUILD_ID}",
                     body: """<p>Build ${env.BUILD_ID} completed successfully.</p>
                              <p>Console output: <a href="${env.BUILD_URL}console">${env.BUILD_URL}console</a></p>""",
